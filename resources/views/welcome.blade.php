@@ -18,7 +18,7 @@
 
         <meta property="og:title" content="Automotive Risk Management Partners Cyber Engagement" />
         <meta property="og:type" content="website" data-rh="true" />
-        <meta property="og:image" content="https://cyber-engagement.autorisknow.com/cyber-engagement.png" />
+        <meta property="og:image" content="https://cyber-engagement.autorisknow.com/cyber-engagement.webp" />
         <meta property="og:description" content="Stop Malicious Assaults and Turn Hackers’ Attacks Back on Them." />
         <meta property="og:url" content="//cyber-engagement.autorisknow.com" />
 
