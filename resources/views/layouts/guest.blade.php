@@ -19,7 +19,7 @@
         <div class="flex min-h-screen flex-col items-center bg-gray-100 pt-6 sm:justify-center sm:pt-0">
             <div>
                 <a href="/" wire:navigate>
-                    <x-application-logo class="h-20 w-20 fill-current text-gray-500" />
+                    <img class="h-20 w-auto" src="{{ asset('favicon.svg') }}" alt="ARMP" />
                 </a>
             </div>
 
