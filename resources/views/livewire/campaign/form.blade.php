@@ -25,5 +25,10 @@
         <flux:error name="email" />
     </flux:field>
 
+    <div>
+        <x-turnstile wire:model="captcha" />
+        <flux:error name="captcha" />
+    </div>
+
     <flux:button type="submit" variant="primary">Submit</flux:button>
 </form>

@@ -4,6 +4,7 @@ namespace App\Livewire\Campaign;
 
 use App\Models\Campaign;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Validation\Rule;
 use Illuminate\View\View;
 use Livewire\Component;
 use Spatie\MailcoachSdk\Mailcoach;
@@ -13,6 +14,7 @@ class Form extends Component
     public string $firstName = '';
     public string $lastName = '';
     public string $email = '';
+    public $captcha;
 
     public function create(): void
     {
@@ -26,9 +28,10 @@ class Form extends Component
     public function rules(): array
     {
         return [
-            'firstName' => 'required|string',
-            'lastName' => 'required|string',
-            'email' => 'required|email',
+            'firstName' => ['required', 'string'],
+            'lastName' => ['required', 'string'],
+            'email' => ['required', 'email'],
+            'captcha' => ['required', Rule::turnstile()],
         ];
     }
 
