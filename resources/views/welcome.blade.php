@@ -15,6 +15,7 @@
 
         <!-- Styles -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @fluxStyles
     </head>
     <body class="font-sans antialiased">
         <div class="relative overflow-hidden bg-white">
@@ -76,13 +77,13 @@
                                 @if (Cookie::get('submitted'))
                                     <div class="mt-3">
                                         <p class="mb-3 text-base font-medium text-gray-900">
-                                            Thank you for downloading our whitepaper.
+                                            Thank you for downloading our special report.
                                         </p>
                                     </div>
                                     <a
                                         download
-                                        href="{{ asset('armp-compliance-whitepaper.pdf') }}"
-                                        class="bg-arm-orange-600 hover:bg-orange-green-500 focus-visible:outline-orange-green-600 inline-flex items-center gap-x-2 rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                                        href="{{ asset('cyber-engagement.pdf') }}"
+                                        class="hover:bg-orange-green-500 focus-visible:outline-orange-green-600 inline-flex items-center gap-x-2 rounded-md bg-arm-orange-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                                     >
                                         <svg
                                             class="-ml-0.5 h-5 w-5"
@@ -102,20 +103,9 @@
                                         </svg>
                                         Download
                                     </a>
-                                    <p class="mt-5">
-                                        Check out our compliance and cybersecurity planning checklist
-                                        <a
-                                            class="text-orange-500 underline hover:text-orange-600"
-                                            href="https://www.autorisknow.com/checklist/"
-                                            target="_blank"
-                                        >
-                                            here
-                                        </a>
-                                        .
-                                    </p>
                                 @else
                                     <p class="text-base font-medium text-gray-900">
-                                        Download our whitepaper to learn more.
+                                        Fill out the form to download our special report.
                                     </p>
                                     <div class="mt-3">
                                         <livewire:campaign.form />
@@ -163,9 +153,9 @@
                             </svg>
                             <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
                                 <div
-                                    class="focus:ring-arm-blue-500 relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-offset-2"
+                                    class="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-arm-blue-500 focus:ring-offset-2"
                                 >
-                                    <img class="w-full" src="{{ asset('whitepaper.webp') }}" alt="" />
+                                    <img class="w-full" src="{{ asset('cover.webp') }}" alt="" />
                                     <span
                                         class="absolute inset-0 flex h-full w-full items-center justify-center"
                                         aria-hidden="true"
@@ -234,5 +224,6 @@
                 </div>
             </div>
         </footer>
+        @fluxScripts
     </body>
 </html>

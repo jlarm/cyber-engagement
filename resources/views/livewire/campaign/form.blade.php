@@ -1,4 +1,4 @@
-<form class="space-y-3">
+<form wire:submit="create" class="space-y-3">
     <div class="grid grid-cols-2 gap-3">
         <flux:field>
             <flux:label>First Name</flux:label>
@@ -25,5 +25,5 @@
         <flux:error name="email" />
     </flux:field>
 
-    <flux:button variant="primary">Submit</flux:button>
+    <flux:button type="submit" variant="primary">Submit</flux:button>
 </form>
