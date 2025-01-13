@@ -16,6 +16,7 @@
         <!-- Styles -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @fluxStyles
+        @turnstileScripts()
     </head>
     <body class="font-sans antialiased">
         <div class="relative overflow-hidden bg-white">
