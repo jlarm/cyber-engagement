@@ -174,7 +174,7 @@
                                 <div
                                     class="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-arm-blue-500 focus:ring-offset-2"
                                 >
-                                    <img class="w-full" src="{{ asset('cover.webp') }}" alt="" />
+                                    <img class="w-full" src="{{ asset('cyber-engagement.webp') }}" alt="" />
                                     <span
                                         class="absolute inset-0 flex h-full w-full items-center justify-center"
                                         aria-hidden="true"
