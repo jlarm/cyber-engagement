@@ -172,6 +172,7 @@
             <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
                 <div class="flex justify-center space-x-6 md:order-2">
                     <a
+                        target="_blank"
                         href="https://www.facebook.com/people/Automotive-Risk-Management-Partners/100090218200818/"
                         class="text-gray-400 hover:text-gray-500"
                     >
@@ -184,7 +185,11 @@
                             />
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/company/autorisknow/" class="text-gray-400 hover:text-gray-500">
+                    <a
+                        target="_blank"
+                        href="https://www.linkedin.com/company/autorisknow/"
+                        class="text-gray-400 hover:text-gray-500"
+                    >
                         <span class="sr-only">LinkedIn</span>
                         <svg
                             class="h-6 w-6"
@@ -204,6 +209,7 @@
                         </svg>
                     </a>
                     <a
+                        target="_blank"
                         href="https://www.youtube.com/@AutomotiveRiskManagement"
                         class="text-gray-400 hover:text-gray-500"
                     >
