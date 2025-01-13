@@ -20,7 +20,6 @@ class Form extends Component
         $this->createCampaign();
         $this->subscribeToMailCoach();
         $this->setCookie();
-
         $this->redirect('/');
     }
 
